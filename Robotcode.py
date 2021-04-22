@@ -27,7 +27,6 @@ def right():
     robot.right()
 
 def stop():
-    robot.stop()
 
 #Bludeot interface - tells bluedot what layout to use and what not to show
 bd = BlueDot(cols=7, rows=3)
@@ -41,11 +40,13 @@ bd[1,1].visible = False
 bd[3,0].visible = False
 bd[3,1].visible = False
 bd[3,2].visible = False
+bd[4,0].visible = False
 bd[4,1].visible = False
-bd[5,0].visible = False
+bd[4,2].visible = False
 bd[5,1].visible = False
-bd[5,2].visible = False
+bd[6,0].visible = False
 bd[6,1].visible = False
+bd[6,2].visible = False
 
 bd[1,0].when_pressed = up
 bd[1,0].square = True
@@ -71,20 +72,13 @@ def pressed_2():
    led3.off()
    led4.off()
 
-def pressed_3():
-   print("button3")
-
-def pressed_4():
-   print("button4")
-
-bd[4,0].when_pressed = pressed_1
-bd[4,2].when_pressed = pressed_2
-bd[6,0].when_pressed = pressed_3
-bd[6,2].when_pressed = pressed_4
-bd[4,0].color = "yellow"
-bd[4,2].color = "red"
+bd[5,0].when_pressed = pressed_1
+bd[5,2].when_pressed = pressed_2
+bd[5,0].color = "yellow"
+bd[5,2].color = "red"
 
 while True:
   led5.on()
 
 pause()
+
