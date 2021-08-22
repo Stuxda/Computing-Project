@@ -47,7 +47,7 @@ bd[4,2].visible = False
 bd[5,1].visible = False
 bd[6,0].visible = False
 bd[6,1].visible = False
-bg[6,2].visible = False
+bd[6,2].visible = False
 
 bd[1,0].when_pressed = up
 bd[1,0].square = True
