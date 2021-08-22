@@ -73,8 +73,8 @@ def pressed_2():
    led3.off()
    led4.off()
    
-bd[4,0].when_pressed = pressed_1
-bd[4,2].when_pressed = pressed_2
+bd[5,0].when_pressed = pressed_1
+bd[5,2].when_pressed = pressed_2
 bd[5,0].color = "yellow"
 bd[5,2].color = "red"
 
